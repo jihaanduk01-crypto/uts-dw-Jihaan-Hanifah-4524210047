@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator Jurus Tunggal IPSI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tutorial Jurus Tunggal IPSI</h1>
+  </header>
+  <video autoplay muted loop playsinline class="header-video">
+    <source src="Amigos.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video HTML5.
+  </video>
+  <div class="header-content">
+    <h1>Formulir Pembuatan Tutorial Jurus Tunggal IPSI</h1>
+    <p class="lead">Isi form di bawah untuk menampilkan pratinjau jurus kamu 🥋</p>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="jurusForm">
+        <fieldset>
+          <legend>Informasi Dasar</legend>
+
+          <label for="namaJurus">Nama Jurus:</label>
+          <input type="text" id="namaJurus" placeholder="Contoh: Jurus Kuda-Kuda Tengah" required>
+
+          <label for="tingkatKesulitan">Tingkat Kesulitan:</label>
+          <select id="tingkatKesulitan">
+            <option value="Mudah">Mudah</option>
+            <option value="Sedang">Sedang</option>
+            <option value="Sulit">Sulit</option>
+          </select>
+
+          <label for="deskripsi">Deskripsi Singkat:</label>
+          <textarea id="deskripsi" rows="3" placeholder="Tuliskan deskripsi singkat jurus..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Langkah-Langkah Jurus</legend>
+          <textarea id="langkah" rows="6" placeholder="Tuliskan langkah-langkah jurus..."></textarea>
+        </fieldset>
+
+        <button type="button" id="previewBtn">Tampilkan Pratinjau </button>
+      </form>
+    </section>
+
+    <section class="preview-section">
+      <article>
+        <h2 id="previewNama">NAMA JURUS AKAN MUNCUL DI SINI</h2>
+        <p id="previewDeskripsi">Deskripsi jurus akan tampil di sini.</p>
+        <p><strong>Tingkat Kesulitan:</strong> <span id="previewKesulitan">-</span></p>
+
+        <h3>Langkah-langkah:</h3>
+        <p id="previewLangkah">Belum ada langkah yang dimasukkan.</p>
+
+        <div class="video-wrapper">
+          <video id="tutorialVideo" controls>
+            <source src="JurusTunggal.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Generator Jurus Tunggal IPSI | Desain oleh <b>Jihaan Hanifah</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
